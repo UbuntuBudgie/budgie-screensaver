@@ -1,0 +1,51 @@
+Source: budgie-screensaver
+Section: misc
+Priority: optional
+Maintainer: David Mohammed <fossfreedom@ubuntu.com>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-gnome,
+ gnome-common,
+ gsettings-desktop-schemas-dev (>= 3.36.0),
+ intltool (>= 0.51.0),
+ libdbus-glib-1-dev (>= 0.110),
+ libglib2.0-dev (>= 2.64.2),
+ libgnome-desktop-3-dev (>= 3.36),
+ libgnomekbd-dev (>= 3.26.1),
+ libgtk-3-dev (>= 3.24.18),
+ libpam0g-dev,
+ libsystemd-dev [linux-any],
+ libx11-dev,
+ libxext-dev,
+ libxklavier-dev,
+ libxss-dev,
+ libxt-dev,
+ libxxf86vm-dev,
+ x11proto-scrnsaver-dev,
+ x11proto-xext-dev,
+ x11proto-xf86vidmode-dev,
+ xmlto,
+Standards-Version: 4.5.1
+Vcs-Browser: https://github.com/UbuntuBudgie/budgie-screensaver/tree/debian
+Vcs-Git: https://github.com/UbuntuBudgie/budgie-screensaver -b debian
+Homepage: https://gibhub.com/getsolus/budgie-screensaver
+Rules-Requires-Root: no
+
+Package: budgie-screensaver
+Architecture: any
+Depends:
+ default-dbus-session-bus | dbus-session-bus,
+ gsettings-desktop-schemas (>= 3.36.0),
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends: gnome-power-manager, libpam-gnome-keyring
+Description: Screensaver and screen lock for the Budgie Desktop
+ budgie-screensaver is a simple screen saver and screen lock and is a
+ form of gnome-screensaver formerly used in older versions of the
+ GNOME desktop environment and adopted for use in the Budgie Desktop
+ .
+ It is designed to support, among other things:
+ .
+  * the ability to lock down configuration settings
+  * translation into other languages
+  * user switching
