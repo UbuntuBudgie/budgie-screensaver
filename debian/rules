@@ -22,5 +22,5 @@ override_dh_auto_configure:
 		--with-systemd=auto
 
 override_dh_install:
-	rm -rf debian/budgie-screensaver/usr/share/doc/gnome-screensaver-*
+	rm -rf debian/budgie-screensaver/usr/share/doc/budgie-screensaver-*
 	dh_install

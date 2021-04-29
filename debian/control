@@ -7,7 +7,7 @@ Section: misc
 Priority: optional
 Maintainer: David Mohammed <fossfreedom@ubuntu.com>
 Build-Depends:
- debhelper-compat (= 12),
+ debhelper-compat (= 13),
  dh-sequence-gnome,
  gnome-common,
  gsettings-desktop-schemas-dev (>= 3.36.0),
@@ -29,7 +29,7 @@ Build-Depends:
  x11proto-xext-dev,
  x11proto-xf86vidmode-dev,
  xmlto,
-Standards-Version: 4.5.0
+Standards-Version: 4.5.1
 Vcs-Browser: https://github.com/UbuntuBudgie/budgie-screensaver/tree/debian
 Vcs-Git: https://github.com/UbuntuBudgie/budgie-screensaver -b debian
 Homepage: https://gibhub.com/getsolus/budgie-screensaver
