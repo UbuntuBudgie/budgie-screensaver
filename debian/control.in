@@ -28,7 +28,7 @@ Build-Depends:
 Standards-Version: 4.5.1
 Vcs-Browser: https://github.com/UbuntuBudgie/budgie-screensaver/tree/debian
 Vcs-Git: https://github.com/UbuntuBudgie/budgie-screensaver -b debian
-Homepage: https://gibhub.com/getsolus/budgie-screensaver
+Homepage: https://github.com/getsolus/budgie-screensaver
 Rules-Requires-Root: no
 
 Package: budgie-screensaver
